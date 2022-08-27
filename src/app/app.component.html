@@ -1,3 +1,8 @@
-<nav-bar></nav-bar>
+<nav-bar (toggleSnav)="toggleSidenav(sidenav)"></nav-bar>
 
-<router-outlet></router-outlet>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="push" class="sidenav" fixedInViewport="true" fixedTopGap="64">
+        <side-nav></side-nav>
+    </mat-sidenav>
+    <router-outlet></router-outlet>
+</mat-sidenav-container>

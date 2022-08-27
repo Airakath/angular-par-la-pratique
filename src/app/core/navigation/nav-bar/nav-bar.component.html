@@ -1,1 +1,11 @@
-<p>nav-bar works!</p>
+<mat-toolbar color="primary">  
+    <div>
+        <button mat-icon-button 
+            aria-label="Toggle sidenav" 
+            (click)="toggleSidenav()" 
+            *ngIf="isHandset$ | async">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+    </div>
+    <span>My Application</span>
+</mat-toolbar>

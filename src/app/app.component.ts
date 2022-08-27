@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { NavBarComponent } from './core/navigation/nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  
+  //@ViewChild(NavBarComponent) navBarComponent: NavBarComponent;
+  
   title = 'angular-par-la-pratique';
+
+  constructor() { }
+
+  ngOnInit(): void {
+
+  }
+
+  public toggleSidenav(sidenav: any) {
+    sidenav.toggle();
+  }
+
 }

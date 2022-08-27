@@ -2,19 +2,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { MaterialModule } from 'src/app/material/material.module';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 
 
 @NgModule({
   declarations: [
-    NavBarComponent
+    NavBarComponent,
+    SideNavComponent
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule
   ],
   exports: [
-    NavBarComponent
+    NavBarComponent,
+    SideNavComponent
   ],
   providers: [
 

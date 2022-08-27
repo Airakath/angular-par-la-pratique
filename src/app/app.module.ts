@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationModule } from './core/navigation/navigation.module';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -14,9 +15,10 @@ import { NavigationModule } from './core/navigation/navigation.module';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
-    NavigationModule
+    NavigationModule,
+    MaterialModule
   ],
-  providers: [
+  providers: [  
 
   ],
   bootstrap: [
