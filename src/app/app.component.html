@@ -2,7 +2,10 @@
 
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #sidenav mode="push" class="sidenav" fixedInViewport="true" fixedTopGap="64">
-        <side-nav></side-nav>
+        <side-nav (toggleSnav)="toggleSidenav(sidenav)"></side-nav>
     </mat-sidenav>
+
     <router-outlet></router-outlet>
 </mat-sidenav-container>
+
+<footer-bar></footer-bar>

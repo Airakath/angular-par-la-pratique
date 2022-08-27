@@ -1,10 +1,10 @@
 .sidenav-container {
-  min-height: 100vh;
+  min-height: calc(100% - 64px);
   height: auto;
 
   .sidenav {
     width: 225px;
-    min-height: calc(100% - 40px);
+    min-height: calc(100% - 64px);
     height: auto;
   }
 }

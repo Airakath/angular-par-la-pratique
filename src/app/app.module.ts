@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationModule } from './core/navigation/navigation.module';
 import { MaterialModule } from './material/material.module';
+import { FooterModule } from './core/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { MaterialModule } from './material/material.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     NavigationModule,
+    FooterModule,
     MaterialModule
   ],
   providers: [  
