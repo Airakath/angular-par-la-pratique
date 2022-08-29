@@ -1,0 +1,23 @@
+<div class="container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                NgFor
+            </mat-card-title>
+            <mat-card-subtitle>
+                La NgFor directive vous permet de définir un contenu à répéter à chaque itération le contenu qui est englobé par la directive.
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="example">
+                <div *ngFor="let row of rows">
+                    <p>{{ row }}</p>
+                </div>
+            </div>
+            <div class="action">
+                <button mat-raised-button color="primary" (click)="addRow()">Add row</button>
+                <button mat-raised-button color="primary" (click)="deleteLastRow()">Delete last row</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

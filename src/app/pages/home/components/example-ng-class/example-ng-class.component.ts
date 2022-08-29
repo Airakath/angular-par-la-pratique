@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'exemple-ng-class',
-  templateUrl: './exemple-ng-class.component.html',
-  styleUrls: ['./exemple-ng-class.component.scss']
+  selector: 'example-ng-class',
+  templateUrl: './example-ng-class.component.html',
+  styleUrls: ['./example-ng-class.component.scss']
 })
-export class ExempleNgClassComponent implements OnInit {
-
+export class ExampleNgClassComponent implements OnInit {
   color?: boolean;
 
   constructor() { }

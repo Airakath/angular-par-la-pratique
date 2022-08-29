@@ -5,12 +5,13 @@ enum Color {
   off = 'red'
 }
 
+
 @Component({
-  selector: 'exemple-ng-style',
-  templateUrl: './exemple-ng-style.component.html',
-  styleUrls: ['./exemple-ng-style.component.scss']
+  selector: 'example-ng-style',
+  templateUrl: './example-ng-style.component.html',
+  styleUrls: ['./example-ng-style.component.scss']
 })
-export class ExempleNgStyleComponent implements OnInit {
+export class ExampleNgStyleComponent implements OnInit {
   color?: string;
 
   constructor() { }
