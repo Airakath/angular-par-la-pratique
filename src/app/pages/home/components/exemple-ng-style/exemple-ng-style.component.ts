@@ -24,7 +24,7 @@ export class ExempleNgStyleComponent implements OnInit {
       ? Color.on
       : Color.off;
 
-    console.log('color :', this.color);
+    console.log('NgStyle color :', this.color);
   }
 
 }

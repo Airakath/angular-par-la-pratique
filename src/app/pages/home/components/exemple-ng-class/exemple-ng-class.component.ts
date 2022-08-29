@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExempleNgClassComponent implements OnInit {
 
+  color?: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.color = true;
+  }
+
+  switchColor(): void {
+    this.color = !this.color;
+    console.log('ngClass color :', this.color);
   }
 
 }
