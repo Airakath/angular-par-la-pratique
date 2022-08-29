@@ -9,6 +9,7 @@ import { ExmpleNgForComponent } from './components/exmple-ng-for/exmple-ng-for.c
 import { ExmpleNgIfComponent } from './components/exmple-ng-if/exmple-ng-if.component';
 import { ExmpleNgSwitchComponent } from './components/exmple-ng-switch/exmple-ng-switch.component';
 import { ExmpleNgNonBindableComponent } from './components/exmple-ng-non-bindable/exmple-ng-non-bindable.component';
+import { MaterialModule } from 'src/app/material/material.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ExmpleNgNonBindableComponent } from './components/exmple-ng-non-bindabl
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MaterialModule
   ]
 })
 export class HomeModule { }

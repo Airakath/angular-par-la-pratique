@@ -1,1 +1,22 @@
-<p>exmple-ng-style works!</p>
+<div class="container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                NgStyle
+            </mat-card-title>
+            <mat-card-subtitle>
+                La NgStyle directive vous permet de définir des propriétés de style à un élément DOM.
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="example">
+                <div [ngStyle]="{'background-color': color}" class="cube"></div>
+
+                <div [style.background-color]="color" class="cube"></div>
+            </div>
+            <div class="action">
+                <button mat-raised-button color="primary" (click)="switchColor()">Switch color</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
