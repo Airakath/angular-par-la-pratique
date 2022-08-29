@@ -1,1 +1,24 @@
-<p>example-ng-if works!</p>
+<div class="container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                NgIf
+            </mat-card-title>
+            <mat-card-subtitle>
+                La NgStyle directive vous permet de définir des propriétés de style à un élément DOM.
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="example">
+                <div *ngIf="status; else elseBlock" [style.background-color]="'green'" class="cube"></div>
+
+                <ng-template #elseBlock>
+                    <div [style.background-color]="'red'" class="cube"></div>
+                </ng-template>
+            </div>
+            <div class="action">
+                <button mat-raised-button color="primary" (click)="switchStatus()">Switch status</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

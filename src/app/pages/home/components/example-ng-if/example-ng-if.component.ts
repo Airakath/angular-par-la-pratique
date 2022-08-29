@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleNgIfComponent implements OnInit {
 
+  status?: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.status = true;
   }
 
+  switchStatus(): void {
+    this.status = !this.status;
+  }
 }
