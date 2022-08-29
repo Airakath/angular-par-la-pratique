@@ -1,0 +1,32 @@
+<div class="container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                NgModel
+            </mat-card-title>
+            <mat-card-subtitle>
+                La NgModel directive vous permet de définir une liaison bidirectionnelle. 
+                <br>
+                Moyen mnémotechnique pour se souvenir de l'ordre des parenthèses, pensez à : 'banana-in-a-box syntax'            
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="example">
+                
+                <form class="form">
+                    <mat-form-field class="field" appearance="fill">
+                        <mat-label>Input two-way binding</mat-label>
+                        <input matInput type="text" [(ngModel)]="value" [ngModelOptions]="{standalone: true}">
+                        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                            <mat-icon>close</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </form>
+
+            </div>
+            <div class="result">
+                <p>{{ value }}</p>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

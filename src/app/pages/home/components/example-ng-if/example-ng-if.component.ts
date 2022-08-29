@@ -17,5 +17,6 @@ export class ExampleNgIfComponent implements OnInit {
 
   switchStatus(): void {
     this.status = !this.status;
+    console.log('NgIf status :', this.status);
   }
 }
