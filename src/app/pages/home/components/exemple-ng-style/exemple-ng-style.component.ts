@@ -4,12 +4,13 @@ enum Color {
   on = 'green',
   off = 'red'
 }
+
 @Component({
-  selector: 'exmple-ng-style',
-  templateUrl: './exmple-ng-style.component.html',
-  styleUrls: ['./exmple-ng-style.component.scss']
+  selector: 'exemple-ng-style',
+  templateUrl: './exemple-ng-style.component.html',
+  styleUrls: ['./exemple-ng-style.component.scss']
 })
-export class ExmpleNgStyleComponent implements OnInit {
+export class ExempleNgStyleComponent implements OnInit {
   color?: string;
 
   constructor() { }
@@ -19,10 +20,10 @@ export class ExmpleNgStyleComponent implements OnInit {
   }
 
   switchColor(): void {
-    this.color = this.color == Color.off 
-      ? Color.on 
+    this.color = this.color == Color.off
+      ? Color.on
       : Color.off;
-      
+
     console.log('color :', this.color);
   }
 

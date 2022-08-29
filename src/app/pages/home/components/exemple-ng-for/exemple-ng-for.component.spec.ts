@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExmpleNgStyleComponent } from './exmple-ng-style.component';
+import { ExempleNgForComponent } from './exemple-ng-for.component';
 
-describe('ExmpleNgStyleComponent', () => {
-  let component: ExmpleNgStyleComponent;
-  let fixture: ComponentFixture<ExmpleNgStyleComponent>;
+describe('ExempleNgForComponent', () => {
+  let component: ExempleNgForComponent;
+  let fixture: ComponentFixture<ExempleNgForComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExmpleNgStyleComponent ]
+      declarations: [ ExempleNgForComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ExmpleNgStyleComponent);
+    fixture = TestBed.createComponent(ExempleNgForComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
