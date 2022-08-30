@@ -5,8 +5,7 @@
                 NgSwitch
             </mat-card-title>
             <mat-card-subtitle>
-                La NgSwitch directive vous permet de définir un contenu à répéter à chaque itération le contenu qui est
-                englobé par la directive.
+                La NgSwitch directive vous permet de définir un modèle conditionner par une expression de comparaison.
             </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
@@ -24,7 +23,7 @@
                     <mat-select (selectionChange)="selectedStatus($event)">
                         <mat-option>--</mat-option>
                         <mat-option *ngFor="let status of statuses" [value]="status.value">
-                            {{status.viewValue}}
+                            {{ status.viewValue }}
                         </mat-option>
                     </mat-select>
                 </mat-form-field>
