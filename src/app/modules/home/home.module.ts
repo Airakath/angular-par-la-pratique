@@ -11,6 +11,8 @@ import { ExampleNgIfComponent } from './components/example-ng-if/example-ng-if.c
 import { ExampleNgForComponent } from './components/example-ng-for/example-ng-for.component';
 import { ExampleNgSwitchComponent } from './components/example-ng-switch/example-ng-switch.component';
 import { ExampleNgModelComponent } from './components/example-ng-model/example-ng-model.component';
+import { ExamplePipeComponent } from './components/example-pipe/example-pipe.component';
+import { PhoneNumberPipe } from './pipes/phone-number.pipe';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ExampleNgModelComponent } from './components/example-ng-model/example-n
     ExampleNgIfComponent,
     ExampleNgForComponent,
     ExampleNgSwitchComponent,
-    ExampleNgModelComponent
+    ExampleNgModelComponent,
+    ExamplePipeComponent,
+    PhoneNumberPipe
   ],
   imports: [
     CommonModule,

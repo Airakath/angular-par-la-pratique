@@ -1,0 +1,20 @@
+<div class="container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                Pipe
+            </mat-card-title>
+            <mat-card-subtitle>
+                Le pipe directive vous permet de définir un modèle conditionner par une expression boolean.
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="example">
+                <p> {{ user?.firstname | titlecase }}</p>
+                <p> {{ user?.lastname | uppercase}}</p>
+                <p> {{ user?.birthday | date:'dd/MM/yyyy'}}</p>
+                <p> {{ user?.phoneNumber | phoneNumber}}</p>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
