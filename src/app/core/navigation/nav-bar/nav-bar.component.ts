@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { map, Observable, shareReplay } from 'rxjs';
-import { BREAKPOINTS } from 'src/constants';
+import { BREAKPOINTS } from 'src/app/core/constants';
 
 
 

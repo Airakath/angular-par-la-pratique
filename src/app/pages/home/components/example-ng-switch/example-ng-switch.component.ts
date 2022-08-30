@@ -1,22 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
-
-enum Color {
-  on = 'green',
-  warning = 'orange',
-  off = 'red'
-}
-
-enum StatusValue {
-  on = 'on',
-  warning = 'warning',
-  off = 'off'
-}
-
-interface Status {
-  value: string;
-  viewValue: string;
-}
+import { Color } from 'src/app/shared/enums/color.enum';
+import { StatusValue } from 'src/app/shared/enums/status-value.enum';
+import { Status } from 'src/app/shared/interfaces/status.interface';
 
 @Component({
   selector: 'example-ng-switch',
@@ -24,11 +10,13 @@ interface Status {
   styleUrls: ['./example-ng-switch.component.scss']
 })
 export class ExampleNgSwitchComponent implements OnInit {
+  Color = Color;
+  StatusValue = StatusValue;
 
   statuses: Status[] = [
-    { value: Color.on, viewValue: StatusValue.on },
-    { value: Color.warning, viewValue: StatusValue.warning },
-    { value: Color.off, viewValue: StatusValue.off },
+    { value: StatusValue.on },
+    { value: StatusValue.warning },
+    { value: StatusValue.off },
   ];
 
   selectedValue?: string;
@@ -42,9 +30,7 @@ export class ExampleNgSwitchComponent implements OnInit {
   selectedStatus(event: MatSelectChange): void {
     const value = event.value;
     this.selectedValue = value;
-    console.log(value);
-    
-
+    console.log('NgSwitch selectedValue :', this.selectedValue);
   }
 
 }

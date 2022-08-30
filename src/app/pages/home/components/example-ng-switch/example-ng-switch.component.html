@@ -5,16 +5,16 @@
                 NgSwitch
             </mat-card-title>
             <mat-card-subtitle>
-                La NgSwitch directive vous permet de définir un modèle conditionner par une expression de comparaison.
+                La NgSwitch directive vous permet de rendre différents éléments en fonction d'une condition donnée.
             </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
             <div class="example">
                 <span [ngSwitch]="selectedValue">
-                    <div *ngSwitchCase="'green'" [ngStyle]="{'background-color': 'green'}" class="cube"></div>
-                    <div *ngSwitchCase="'orange'" [ngStyle]="{'background-color': 'orange'}" class="cube"></div>
-                    <div *ngSwitchCase="'red'" [ngStyle]="{'background-color': 'red'}" class="cube"></div>
-                    <div *ngSwitchDefault="'whitesmoke'" [ngStyle]="{'background-color': 'whitesmoke'}" class="cube"></div>
+                    <div *ngSwitchCase="StatusValue.on" [ngStyle]="{'background-color': Color.on}" class="cube"></div>
+                    <div *ngSwitchCase="StatusValue.warning" [ngStyle]="{'background-color': Color.warning}" class="cube"></div>
+                    <div *ngSwitchCase="StatusValue.off" [ngStyle]="{'background-color': Color.off}" class="cube"></div>
+                    <div *ngSwitchDefault [ngStyle]="{'background-color': 'Color.undefined'}" class="cube"></div>
                 </span>
             </div>
             <div class="action">
@@ -23,7 +23,7 @@
                     <mat-select (selectionChange)="selectedStatus($event)">
                         <mat-option>--</mat-option>
                         <mat-option *ngFor="let status of statuses" [value]="status.value">
-                            {{ status.viewValue }}
+                            {{ status.value }}
                         </mat-option>
                     </mat-select>
                 </mat-form-field>
