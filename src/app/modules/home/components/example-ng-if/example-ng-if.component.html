@@ -10,10 +10,10 @@
         </mat-card-header>
         <mat-card-content>
             <div class="example">
-                <div *ngIf="status; else elseBlock" [style.background-color]="'green'" class="cube"></div>
+                <div *ngIf="status; else elseBlock" [style.background-color]="Color.on" class="cube"></div>
 
                 <ng-template #elseBlock>
-                    <div [style.background-color]="'red'" class="cube"></div>
+                    <div [style.background-color]="Color.off" class="cube"></div>
                 </ng-template>
             </div>
             <div class="action">

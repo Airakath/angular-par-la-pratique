@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Color } from 'src/app/shared/enums/color.enum';
 
 @Component({
   selector: 'example-ng-if',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./example-ng-if.component.scss']
 })
 export class ExampleNgIfComponent implements OnInit {
-
+  Color = Color;
   status?: boolean;
 
   constructor() { }

@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-enum Color {
-  on = 'green',
-  off = 'red'
-}
-
+import { Color } from 'src/app/shared/enums/color.enum';
 
 @Component({
   selector: 'example-ng-style',
@@ -12,6 +7,7 @@ enum Color {
   styleUrls: ['./example-ng-style.component.scss']
 })
 export class ExampleNgStyleComponent implements OnInit {
+  Color?: Color;
   color?: string;
 
   constructor() { }
