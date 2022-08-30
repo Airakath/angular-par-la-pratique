@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './views/home/home.component';
-import { MaterialModule } from 'src/app/material/material.module';
+import { MaterialModule } from 'src/app/core/material/material.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ExampleNgStyleComponent } from './components/example-ng-style/example-ng-style.component';
 import { ExampleNgClassComponent } from './components/example-ng-class/example-ng-class.component';

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationModule } from './core/navigation/navigation.module';
-import { MaterialModule } from './material/material.module';
+import { MaterialModule } from './core/material/material.module';
 import { FooterModule } from './core/footer/footer.module';
 
 @NgModule({
