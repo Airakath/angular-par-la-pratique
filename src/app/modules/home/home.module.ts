@@ -13,6 +13,8 @@ import { ExampleNgSwitchComponent } from './components/example-ng-switch/example
 import { ExampleNgModelComponent } from './components/example-ng-model/example-ng-model.component';
 import { ExamplePipeComponent } from './components/example-pipe/example-pipe.component';
 import { PhoneNumberPipe } from './pipes/phone-number.pipe';
+import { ExampleStringInterpolationComponent } from './components/example-string-interpolation/example-string-interpolation.component';
+import { ExampleAttributeBindingComponent } from './components/example-attribute-binding/example-attribute-binding.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { PhoneNumberPipe } from './pipes/phone-number.pipe';
     ExampleNgSwitchComponent,
     ExampleNgModelComponent,
     ExamplePipeComponent,
-    PhoneNumberPipe
+    PhoneNumberPipe,
+    ExampleStringInterpolationComponent,
+    ExampleAttributeBindingComponent
   ],
   imports: [
     CommonModule,
