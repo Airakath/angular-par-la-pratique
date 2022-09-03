@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/shared/interfaces/user.interface';
+import { IUser } from 'src/app/shared/interfaces/user.interface';
 
 @Component({
   selector: 'example-pipe',
@@ -8,7 +8,7 @@ import { User } from 'src/app/shared/interfaces/user.interface';
 })
 export class ExamplePipeComponent implements OnInit {
 
-  user?: User; 
+  user?: IUser; 
  
   constructor() { }
 

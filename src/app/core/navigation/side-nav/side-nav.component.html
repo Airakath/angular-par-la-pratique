@@ -5,6 +5,10 @@
         <mat-icon mat-list-icon>home</mat-icon>
         <span>Accueil</span>
     </a>
+    <a mat-list-item routerLink="/blog" routerLinkActive="active" (click)="toggleSidenav()">
+        <mat-icon mat-list-icon>bookmark_border</mat-icon>
+        <span>Blog</span>
+    </a>
     <a mat-list-item routerLink="/contact" routerLinkActive="active" (click)="toggleSidenav()">
         <mat-icon mat-list-icon>info</mat-icon>
         <span>Contact</span>

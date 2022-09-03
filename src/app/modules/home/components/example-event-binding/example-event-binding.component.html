@@ -5,12 +5,18 @@
                 <h1>Attribute binding</h1>
             </mat-card-title>
             <mat-card-subtitle>
-                La attribute binding permet de faire référence dans le template HTML à des propriété défini dans la class typescript
+
             </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
             <div class="example">
-                <a [href]="link" target="_blank"> discord</a>
+                {{ counter }}
+            </div>
+            <div class="action">
+                <button mat-raised-button color="primary" 
+                    (click)="increment()">
+                    increment
+                </button>
             </div>
         </mat-card-content>
     </mat-card>
