@@ -10,7 +10,7 @@ import { FooterModule } from './core/footer/footer.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -24,5 +24,4 @@ export class BlogDetailComponent implements OnInit {
       this.publicationId = params['id'];
     });
   }
-
 }

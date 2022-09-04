@@ -16,6 +16,9 @@ import { PhoneNumberPipe } from './pipes/phone-number.pipe';
 import { ExampleStringInterpolationComponent } from './components/example-string-interpolation/example-string-interpolation.component';
 import { ExampleAttributeBindingComponent } from './components/example-attribute-binding/example-attribute-binding.component';
 import { ExampleEventBindingComponent } from './components/example-event-binding/example-event-binding.component';
+import { ExampleDirectiveComponent } from './components/example-directive/example-directive.component';
+import { ColorOnDirective } from 'src/app/shared/directives/color-on.directive';
+import { ColorOffDirective } from 'src/app/shared/directives/color-off.directive';
 
 
 @NgModule({
@@ -31,7 +34,10 @@ import { ExampleEventBindingComponent } from './components/example-event-binding
     PhoneNumberPipe,
     ExampleStringInterpolationComponent,
     ExampleAttributeBindingComponent,
-    ExampleEventBindingComponent
+    ExampleEventBindingComponent,
+    ExampleDirectiveComponent,
+    ColorOnDirective,
+    ColorOffDirective
   ],
   imports: [
     CommonModule,

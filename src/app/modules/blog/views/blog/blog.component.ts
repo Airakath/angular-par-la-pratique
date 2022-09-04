@@ -7,7 +7,6 @@ import { IPublication } from 'src/app/shared/interfaces/publication.interfacr';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
-
   publications?: IPublication[] = [];
 
   constructor(
