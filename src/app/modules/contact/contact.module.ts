@@ -12,6 +12,12 @@ import { ContactComponent } from './views/contact/contact.component';
   imports: [
     CommonModule,
     ContactRoutingModule
+  ],
+  exports: [
+
+  ],
+  providers: [
+
   ]
 })
 export class ContactModule { }

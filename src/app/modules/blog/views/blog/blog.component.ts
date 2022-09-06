@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IPublication } from 'src/app/shared/interfaces/publication.interfacr';
+import { IPublication } from 'src/app/shared/interfaces/publication/publication.interface';
 
 @Component({
   selector: 'app-blog',

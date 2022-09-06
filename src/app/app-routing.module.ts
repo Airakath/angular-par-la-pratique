@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/blog/blog.module').then(m => m.BlogModule)
   }, 
   {
+    path: 'pokedex',
+    loadChildren: () => import('./modules/pokedex/pokedex.module').then(m => m.PokedexModule)
+  },   
+  {
     path: 'contact',
     loadChildren: () => import('./modules/contact/contact.module').then(m => m.ContactModule)
   }, 

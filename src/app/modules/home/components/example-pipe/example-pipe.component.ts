@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IUser } from 'src/app/shared/interfaces/user.interface';
+import { IUser } from 'src/app/shared/interfaces/user/user.interface';
 
 @Component({
   selector: 'example-pipe',

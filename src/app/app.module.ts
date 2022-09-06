@@ -20,9 +20,7 @@ import { FooterModule } from './core/footer/footer.module';
     FooterModule,
     MaterialModule
   ],
-  providers: [  
 
-  ],
   bootstrap: [
     AppComponent
   ]
