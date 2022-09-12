@@ -22,7 +22,6 @@ import { HttpClientModule } from '@angular/common/http';
     MaterialModule,
     HttpClientModule
   ],
-
   bootstrap: [
     AppComponent
   ]
